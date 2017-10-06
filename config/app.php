@@ -20,9 +20,9 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Debug Mode
+    | Application Debug Mode debug模式
     |--------------------------------------------------------------------------
-    |
+    | 如果应用处于debug模式，当错误发生的时候详细的错误信息将会显示出来。 如果关掉，则会出现简单的错误页面
     | When your application is in debug mode, detailed error messages with
     | stack traces will be shown on every error that occurs within your
     | application. If disabled, a simple generic error page is shown.
@@ -108,6 +108,7 @@ return [
     | you a variety of powerful log handlers / formatters to utilize.
     |
     | Available Settings: "single", "daily", "syslog", "errorlog"
+    | 日志配置 single 单一日志文件 daily按天命名
     |
     */
 
