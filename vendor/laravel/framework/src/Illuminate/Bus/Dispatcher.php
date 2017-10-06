@@ -42,7 +42,7 @@ class Dispatcher implements QueueingDispatcher
 
     /**
      * Create a new command dispatcher instance.
-     *
+     * 创建一个新的命令分发器实例
      * @param  \Illuminate\Contracts\Container\Container  $container
      * @param  \Closure|null  $queueResolver
      * @return void
@@ -56,7 +56,7 @@ class Dispatcher implements QueueingDispatcher
 
     /**
      * Dispatch a command to its appropriate handler.
-     *
+     * 分发一个命令到适当的处理模块
      * @param  mixed  $command
      * @return mixed
      */
@@ -95,7 +95,7 @@ class Dispatcher implements QueueingDispatcher
 
     /**
      * Dispatch a command to its appropriate handler behind a queue.
-     *
+     * 分发命令到对应的消息队列中
      * @param  mixed  $command
      * @return mixed
      *
@@ -120,7 +120,7 @@ class Dispatcher implements QueueingDispatcher
 
     /**
      * Push the command onto the given queue instance.
-     *
+     * 推送一条命令到消息队列实例
      * @param  \Illuminate\Contracts\Queue\Queue  $queue
      * @param  mixed  $command
      * @return mixed

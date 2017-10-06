@@ -157,7 +157,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Determine if a given string is an alias.
-     *
+     * 判断给定的字符串是否是一个服务的别名
      * @param  string  $name
      * @return bool
      */
@@ -509,7 +509,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Determine if the given string is in Class@method syntax.
-     *
+     * 判断给定的字符串是否有@标识符
      * @param  mixed  $callback
      * @return bool
      */
@@ -689,6 +689,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Normalize the given class name by removing leading slashes.
+     * 去掉给定的类名称的反斜线
      *
      * @param  mixed  $service
      * @return mixed

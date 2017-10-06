@@ -45,6 +45,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the queue manager.
+     * 注册消息队列控制器
      *
      * @return void
      */
@@ -140,7 +141,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the connectors on the queue manager.
-     *
+     * 注册消息队列中控制器的连接器
      * @param  \Illuminate\Queue\QueueManager  $manager
      * @return void
      */
@@ -166,6 +167,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the Sync queue connector.
+     * 注册同步消息队列连接器
      *
      * @param  \Illuminate\Queue\QueueManager  $manager
      * @return void
@@ -179,6 +181,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the Beanstalkd queue connector.
+     * 注册Beanstalkd消息队列连接器
      *
      * @param  \Illuminate\Queue\QueueManager  $manager
      * @return void
@@ -192,6 +195,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the database queue connector.
+     * 注册数据库消息队列连接器
      *
      * @param  \Illuminate\Queue\QueueManager  $manager
      * @return void
@@ -205,6 +209,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the Redis queue connector.
+     * 注册redis消息队列连接器
      *
      * @param  \Illuminate\Queue\QueueManager  $manager
      * @return void
@@ -220,6 +225,7 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the Amazon SQS queue connector.
+     * 注册SQL消息队列连接器
      *
      * @param  \Illuminate\Queue\QueueManager  $manager
      * @return void

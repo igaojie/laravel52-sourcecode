@@ -15,7 +15,7 @@ class BusServiceProvider extends ServiceProvider
 
     /**
      * Register the service provider.
-     *
+     * 注册分发器服务
      * @return void
      */
     public function register()
