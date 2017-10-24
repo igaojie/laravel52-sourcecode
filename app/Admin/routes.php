@@ -13,3 +13,5 @@ Route::group([
     $router->get('/', 'HomeController@index');
 
 });
+
+$router->resource('test', \App\Admin\Controllers\TestController::class);
