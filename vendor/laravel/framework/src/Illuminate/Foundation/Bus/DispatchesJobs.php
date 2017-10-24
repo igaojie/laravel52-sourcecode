@@ -8,7 +8,7 @@ trait DispatchesJobs
 {
     /**
      * Dispatch a job to its appropriate handler.
-     *
+     * 分发消息到适当的处理模块
      * @param  mixed  $job
      * @return mixed
      */
@@ -19,7 +19,7 @@ trait DispatchesJobs
 
     /**
      * Dispatch a command to its appropriate handler in the current process.
-     *
+     * 在当前执行的进程中分发消息到适当的处理模块
      * @param  mixed  $job
      * @return mixed
      */

@@ -12,7 +12,7 @@ class SyncQueue extends Queue implements QueueContract
 {
     /**
      * Push a new job onto the queue.
-     *
+     * 推送一条新的消息到队列
      * @param  string  $job
      * @param  mixed   $data
      * @param  string  $queue
@@ -87,7 +87,7 @@ class SyncQueue extends Queue implements QueueContract
 
     /**
      * Resolve a Sync job instance.
-     *
+     * 处理一个同步类型的消息实例
      * @param  string  $payload
      * @return \Illuminate\Queue\Jobs\SyncJob
      */

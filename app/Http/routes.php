@@ -15,4 +15,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::get('test', 'TestController@showProfile');
+=======
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+>>>>>>> 34b22114350c15bbc9ef7e0de6e061079ea37298

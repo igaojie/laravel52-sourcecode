@@ -36,7 +36,7 @@ class SyncJob extends Job implements JobContract
 
     /**
      * Fire the job.
-     *
+     * 处理一个消息
      * @return void
      */
     public function fire()

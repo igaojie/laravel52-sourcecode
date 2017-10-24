@@ -120,6 +120,7 @@ class QueueManager implements FactoryContract, MonitorContract
 
     /**
      * Resolve a queue connection instance.
+     * 获取一个消息队列连接器实例
      *
      * @param  string  $name
      * @return \Illuminate\Contracts\Queue\Queue
@@ -144,6 +145,7 @@ class QueueManager implements FactoryContract, MonitorContract
 
     /**
      * Resolve a queue connection.
+     * 解决一个消息队列连接
      *
      * @param  string  $name
      * @return \Illuminate\Contracts\Queue\Queue
@@ -157,6 +159,7 @@ class QueueManager implements FactoryContract, MonitorContract
 
     /**
      * Get the connector for a given driver.
+     * 根据给定的驱动获取消息队列连接器
      *
      * @param  string  $driver
      * @return \Illuminate\Queue\Connectors\ConnectorInterface
@@ -186,6 +189,7 @@ class QueueManager implements FactoryContract, MonitorContract
 
     /**
      * Add a queue connection resolver.
+     * 添加一个消息队列连接处理器
      *
      * @param  string    $driver
      * @param  \Closure  $resolver
@@ -213,7 +217,7 @@ class QueueManager implements FactoryContract, MonitorContract
 
     /**
      * Get the name of the default queue connection.
-     *
+     * 获取默认消息队列连接的名字
      * @return string
      */
     public function getDefaultDriver()
@@ -223,7 +227,7 @@ class QueueManager implements FactoryContract, MonitorContract
 
     /**
      * Set the name of the default queue connection.
-     *
+     * 设置默认消息队列连接的名字
      * @param  string  $name
      * @return void
      */

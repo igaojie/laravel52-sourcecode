@@ -12,7 +12,7 @@ trait SerializesModels
 {
     /**
      * Prepare the instance for serialization.
-     *
+     * 为序列化准备实例
      * @return array
      */
     public function __sleep()

@@ -71,7 +71,7 @@ abstract class Queue
 
     /**
      * Create a payload string from the given job and data.
-     *
+     * 通过给定的消息和数据创建一个载荷字符串
      * @param  string  $job
      * @param  mixed   $data
      * @param  string  $queue

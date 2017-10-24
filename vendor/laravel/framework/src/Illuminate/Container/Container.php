@@ -30,21 +30,21 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * The container's bindings.
-     *
+     * 容器绑定数组 存储提供服务的回调函数
      * @var array
      */
     protected $bindings = [];
 
     /**
      * The container's shared instances.
-     *
+     * 容器共享实例数组 单例数组
      * @var array
      */
     protected $instances = [];
 
     /**
      * The registered type aliases.
-     *
+     * 服务别名的存储数组
      * @var array
      */
     protected $aliases = [];
@@ -157,7 +157,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Determine if a given string is an alias.
-     *
+     * 判断给定的字符串是否是一个服务的别名
      * @param  string  $name
      * @return bool
      */
@@ -168,7 +168,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Register a binding with the container.
-     *
+     * 注册一个绑定到容器中 $shared=true说明是单例 可以共享
      * @param  string|array  $abstract
      * @param  \Closure|string|null  $concrete
      * @param  bool  $shared
@@ -217,7 +217,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Get the Closure to be used when building a type.
-     *
+     * 默认生成实例的回调函数 得到一个闭包用于绑定一个类
      * @param  string  $abstract
      * @param  string  $concrete
      * @return \Closure
@@ -261,7 +261,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Register a shared binding in the container.
-     *
+     * 注册一个单例绑定到容器中
      * @param  string|array  $abstract
      * @param  \Closure|string|null  $concrete
      * @return void
@@ -509,7 +509,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Determine if the given string is in Class@method syntax.
-     *
+     * 判断给定的字符串是否有@标识符
      * @param  mixed  $callback
      * @return bool
      */
@@ -604,9 +604,9 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Resolve the given type from the container.
-     *
-     * @param  string  $abstract
-     * @param  array   $parameters
+     * 通过容器实例化一个给定的类
+     * @param  string  $abstract 服务的名称
+     * @param  array   $parameters 创建实例化对象所需要的参数 也就是一个类实例化时候的依赖
      * @return mixed
      */
     public function make($abstract, array $parameters = [])
@@ -654,7 +654,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Get the concrete type for a given abstract.
-     *
+     * 根据给定的抽象类的名称获取实体类
      * @param  string  $abstract
      * @return mixed   $concrete
      */
@@ -689,6 +689,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Normalize the given class name by removing leading slashes.
+     * 去掉给定的类名称的反斜线
      *
      * @param  mixed  $service
      * @return mixed
@@ -715,7 +716,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Instantiate a concrete instance of the given type.
-     *
+     * 根据给定的服务具体名称实例化一个具体类对象
      * @param  string  $concrete
      * @param  array   $parameters
      * @return mixed
@@ -731,6 +732,7 @@ class Container implements ArrayAccess, ContainerContract
             return $concrete($this, $parameters);
         }
 
+        #返回一个类的有关信息
         $reflector = new ReflectionClass($concrete);
 
         // If the type is not instantiable, the developer is attempting to resolve
@@ -750,6 +752,7 @@ class Container implements ArrayAccess, ContainerContract
 
         $this->buildStack[] = $concrete;
 
+        #获取构造方法
         $constructor = $reflector->getConstructor();
 
         // If there are no constructors, that means there are no dependencies then
@@ -761,6 +764,7 @@ class Container implements ArrayAccess, ContainerContract
             return new $concrete;
         }
 
+        #获取构造方法的参数
         $dependencies = $constructor->getParameters();
 
         // Once we have all the constructor's parameters we can create each of the
@@ -781,7 +785,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Resolve all of the dependencies from the ReflectionParameters.
-     *
+     * 通过反射机制解决所有的参数依赖
      * @param  array  $parameters
      * @param  array  $primitives
      * @return array
@@ -810,7 +814,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Resolve a non-class hinted dependency.
-     *
+     * 解决一个没有类提示的依赖
      * @param  \ReflectionParameter  $parameter
      * @return mixed
      *
@@ -830,6 +834,7 @@ class Container implements ArrayAccess, ContainerContract
             return $parameter->getDefaultValue();
         }
 
+        #异常处理
         $message = "Unresolvable dependency resolving [$parameter] in class {$parameter->getDeclaringClass()->getName()}";
 
         throw new BindingResolutionException($message);
@@ -837,7 +842,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Resolve a class based dependency from the container.
-     *
+     * 通过容器解决一个类的依赖
      * @param  \ReflectionParameter  $parameter
      * @return mixed
      *
@@ -1055,7 +1060,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Determine if the given concrete is buildable.
-     *
+     * 判断给定的服务实体是否可以创建
      * @param  mixed   $concrete
      * @param  string  $abstract
      * @return bool
@@ -1067,7 +1072,7 @@ class Container implements ArrayAccess, ContainerContract
 
     /**
      * Get the alias for an abstract if available.
-     *
+     * 获取抽象类名称的别名
      * @param  string  $abstract
      * @return string
      */
