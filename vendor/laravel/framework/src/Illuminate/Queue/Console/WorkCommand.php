@@ -54,6 +54,7 @@ class WorkCommand extends Command
      */
     public function fire()
     {
+        //维护模式
         if ($this->downForMaintenance() && ! $this->option('daemon')) {
             return $this->worker->sleep($this->option('sleep'));
         }
@@ -144,7 +145,7 @@ class WorkCommand extends Command
 
     /**
      * Determine if the worker should run in maintenance mode.
-     *
+     * 判断是否是维护模式
      * @return bool
      */
     protected function downForMaintenance()
@@ -158,7 +159,7 @@ class WorkCommand extends Command
 
     /**
      * Get the console command arguments.
-     *
+     * 获取命令行参数
      * @return array
      */
     protected function getArguments()
@@ -170,7 +171,7 @@ class WorkCommand extends Command
 
     /**
      * Get the console command options.
-     *
+     * 获取命令行选项
      * @return array
      */
     protected function getOptions()

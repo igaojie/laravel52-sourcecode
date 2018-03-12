@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use Log;
 use App\Jobs\Job;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
@@ -29,5 +30,10 @@ class TestJob extends Job implements ShouldQueue
     public function handle()
     {
         //
+        Log::info(__CLASS__);
+        //sleep(10);
+        throw new \Exception("我就是个测试，我就让你一直重试。。。。", 1);
+        
     }
+
 }

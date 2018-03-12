@@ -12,7 +12,7 @@ class Inspire extends Command
      *
      * @var string
      */
-    protected $signature = 'inspire';
+    protected $signature = 'inspire111';
 
     /**
      * The console command description.
@@ -28,6 +28,7 @@ class Inspire extends Command
      */
     public function handle()
     {
+        echo '###';
         $this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
     }
 }

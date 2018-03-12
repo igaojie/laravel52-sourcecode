@@ -89,7 +89,7 @@ class RedisJob extends Job implements JobContract
 
     /**
      * Get the number of times the job has been attempted.
-     *
+     * 获取任务的重试次数
      * @return int
      */
     public function attempts()
@@ -99,7 +99,7 @@ class RedisJob extends Job implements JobContract
 
     /**
      * Get the job identifier.
-     *
+     * 获取任务的唯一标识符
      * @return string
      */
     public function getJobId()

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Jobs\TestJob;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -24,6 +25,20 @@ class HomeController extends Controller
      */
     public function index()
     {
+        #写个队列进行测试
+        $job = (new TestJob())->delay(1);
+
+        $this->dispatch($job);
+
+        $job = (new TestJob());
+
+        $this->dispatch($job);
+
+        //$this->dispatchNow($job);
+
+
+        dd('dispatch success');
+
         return view('home');
     }
 }

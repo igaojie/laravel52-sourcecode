@@ -12,20 +12,21 @@ class RedisQueue extends Queue implements QueueContract
 {
     /**
      * The Redis database instance.
-     *
+     * Redis实例
      * @var \Illuminate\Redis\Database
      */
     protected $redis;
 
     /**
      * The connection name.
-     *
+     * 连接名
      * @var string
      */
     protected $connection;
 
     /**
      * The name of the default queue.
+     * 默认的队列名称
      *
      * @var string
      */
@@ -33,14 +34,14 @@ class RedisQueue extends Queue implements QueueContract
 
     /**
      * The expiration time of a job.
-     *
+     * 过期时间
      * @var int|null
      */
     protected $expire = 60;
 
     /**
      * Create a new Redis queue instance.
-     *
+     * 创建一个Redis 队列实例
      * @param  \Illuminate\Redis\Database  $redis
      * @param  string  $default
      * @param  string  $connection
@@ -83,7 +84,7 @@ class RedisQueue extends Queue implements QueueContract
 
     /**
      * Push a new job onto the queue after a delay.
-     *
+     * 将任务推送到延迟队列有序集合
      * @param  \DateTime|int  $delay
      * @param  string  $job
      * @param  mixed   $data
@@ -144,7 +145,7 @@ class RedisQueue extends Queue implements QueueContract
 
     /**
      * Delete a reserved job from the queue.
-     *
+     * 从暂存的有序集合中删除掉一个任务
      * @param  string  $queue
      * @param  string  $job
      * @return void
