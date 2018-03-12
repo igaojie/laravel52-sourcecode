@@ -128,17 +128,22 @@ class RedisQueue extends Queue implements QueueContract
     {
         $original = $queue ?: $this->default;
 
+        //获取执行任务的队列
         $queue = $this->getQueue($queue);
 
+        //如果设置了过期时间
         if (! is_null($this->expire)) {
             $this->migrateAllExpiredJobs($queue);
         }
 
+        //从default里取数据
         $job = $this->getConnection()->lpop($queue);
 
         if (! is_null($job)) {
+            //将取出来的数据放入reserved暂存
             $this->getConnection()->zadd($queue.':reserved', $this->getTime() + $this->expire, $job);
 
+            //执行
             return new RedisJob($this->container, $this, $job, $original);
         }
     }

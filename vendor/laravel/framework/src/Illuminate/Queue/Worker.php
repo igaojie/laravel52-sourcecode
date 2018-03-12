@@ -133,7 +133,7 @@ class Worker
 
     /**
      * Listen to the given queue.
-     *
+     * 监听队列数据
      * @param  string  $connectionName
      * @param  string  $queue
      * @param  int     $delay
@@ -180,6 +180,7 @@ class Worker
             return $connection->pop();
         }
 
+        //explode(',', $queue) 这个就是能支持分优先级来执行 high,low high总是在low之前pop
         foreach (explode(',', $queue) as $queue) {
             if (! is_null($job = $connection->pop($queue))) {
                 return $job;
