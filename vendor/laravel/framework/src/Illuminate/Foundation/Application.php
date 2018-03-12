@@ -878,7 +878,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
 
     /**
      * Determine if the application is currently down for maintenance.
-     *
+     * 判断是否是下线维护模式 会在storage里生成down文件
      * @return bool
      */
     public function isDownForMaintenance()
