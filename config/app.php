@@ -108,11 +108,11 @@ return [
     | you a variety of powerful log handlers / formatters to utilize.
     |
     | Available Settings: "single", "daily", "syslog", "errorlog"
-    | 日志配置 single 单一日志文件 daily按天命名
+    | 日志配置 single 单一日志文件 daily按天命名 errorlog 将会将日志记录在php_error.log里
     |
     */
 
-    'log' => env('APP_LOG', 'single'),
+    'log' => env('APP_LOG', 'daily'),
 
     /*
     |--------------------------------------------------------------------------

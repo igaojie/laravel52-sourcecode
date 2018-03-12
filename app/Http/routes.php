@@ -15,9 +15,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
+Route::get('test', 'TestController@showProfile');
+=======
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+<<<<<<< HEAD
 Route::controller('/demo', 'DemoController');
 
+=======
+>>>>>>> 34b22114350c15bbc9ef7e0de6e061079ea37298
+>>>>>>> 33c54b37c4fd65cefd47c601d67e52e1ca5c6fe4
