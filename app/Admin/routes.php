@@ -14,4 +14,4 @@ Route::group([
 
 });
 
-$router->resource('test', \App\Admin\Controllers\TestController::class);
+//$router->resource('test', \App\Admin\Controllers\TestController::class);
