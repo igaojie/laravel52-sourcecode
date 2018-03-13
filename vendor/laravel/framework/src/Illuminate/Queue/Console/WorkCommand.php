@@ -54,6 +54,7 @@ class WorkCommand extends Command
      */
     public function fire()
     {
+        //dd(debug_backtrace());
         //维护模式
         if ($this->downForMaintenance() && ! $this->option('daemon')) {
             return $this->worker->sleep($this->option('sleep'));

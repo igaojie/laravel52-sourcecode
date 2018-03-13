@@ -27,17 +27,20 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the service provider.
-     *
+     * 注册服务提供者
      * @return void
      */
     public function register()
     {
+        //注册Manager, 而Manager为队列服务的统一入口
         $this->registerManager();
 
+        //注册队列的各种命令
         $this->registerWorker();
 
         $this->registerListener();
 
+        // 注册任务执行失败后的记录
         $this->registerFailedJobServices();
 
         $this->registerQueueClosure();
@@ -239,14 +242,16 @@ class QueueServiceProvider extends ServiceProvider
 
     /**
      * Register the failed job services.
-     *
+     * 注册失败任务的处理服务
      * @return void
      */
     protected function registerFailedJobServices()
     {
         $this->app->singleton('queue.failer', function ($app) {
+            //config/queue.php failed配置选项
             $config = $app['config']['queue.failed'];
 
+            //如果配置了这个table 那么则会初始化一个处理服务 否则 不管。
             if (isset($config['table'])) {
                 return new DatabaseFailedJobProvider($app['db'], $config['database'], $config['table']);
             } else {

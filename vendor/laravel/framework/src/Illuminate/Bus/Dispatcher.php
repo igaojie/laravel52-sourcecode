@@ -62,6 +62,7 @@ class Dispatcher implements QueueingDispatcher
      */
     public function dispatch($command)
     {
+        //
         if ($this->queueResolver && $this->commandShouldBeQueued($command)) {
             return $this->dispatchToQueue($command);
         } else {
@@ -84,7 +85,7 @@ class Dispatcher implements QueueingDispatcher
 
     /**
      * Determine if the given command should be queued.
-     *
+     * 判断参数是否是走队列
      * @param  mixed  $command
      * @return bool
      */
@@ -103,6 +104,8 @@ class Dispatcher implements QueueingDispatcher
      */
     public function dispatchToQueue($command)
     {
+        //dd($command);
+        // 如果指定了连接器 那么就使用
         $connection = isset($command->connection) ? $command->connection : null;
 
         $queue = call_user_func($this->queueResolver, $connection);

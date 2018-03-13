@@ -45,7 +45,7 @@ class DatabaseFailedJobProvider implements FailedJobProviderInterface
 
     /**
      * Log a failed job into storage.
-     *
+     * 记录失败的任务到存储
      * @param  string  $connection
      * @param  string  $queue
      * @param  string  $payload
@@ -60,7 +60,7 @@ class DatabaseFailedJobProvider implements FailedJobProviderInterface
 
     /**
      * Get a list of all of the failed jobs.
-     *
+     * 获取所有的失败任务的列表按照id倒叙排列
      * @return array
      */
     public function all()
@@ -70,7 +70,7 @@ class DatabaseFailedJobProvider implements FailedJobProviderInterface
 
     /**
      * Get a single failed job.
-     *
+     * 获取单个失败的任务
      * @param  mixed  $id
      * @return array
      */
@@ -81,7 +81,7 @@ class DatabaseFailedJobProvider implements FailedJobProviderInterface
 
     /**
      * Delete a single failed job from storage.
-     *
+     * 从存储介质里删掉一个失败的任务
      * @param  mixed  $id
      * @return bool
      */
@@ -92,7 +92,7 @@ class DatabaseFailedJobProvider implements FailedJobProviderInterface
 
     /**
      * Flush all of the failed jobs from storage.
-     *
+     * 清空存储介质里所有的失败任务
      * @return void
      */
     public function flush()
@@ -102,7 +102,7 @@ class DatabaseFailedJobProvider implements FailedJobProviderInterface
 
     /**
      * Get a new query builder instance for the table.
-     *
+     * 获取一个表对象实例
      * @return \Illuminate\Database\Query\Builder
      */
     protected function getTable()
