@@ -3,23 +3,32 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Foundation\Inspiring;
 
-class Inspire extends Command
+class Test extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'inspire111';
+    protected $signature = 'command:name';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Display an inspiring quote';
+    protected $description = 'Command description';
+
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
     /**
      * Execute the console command.
@@ -28,7 +37,8 @@ class Inspire extends Command
      */
     public function handle()
     {
-        echo '###';
-        $this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
+        //
+        echo $this->description.PHP_EOL;
+        dd('Test handle...');
     }
 }

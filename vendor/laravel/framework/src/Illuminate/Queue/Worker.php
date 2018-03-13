@@ -67,7 +67,7 @@ class Worker
 
     /**
      * Listen to the given queue in a loop.
-     *
+     * 循环处理
      * @param  string  $connectionName
      * @param  string  $queue
      * @param  int     $delay
@@ -81,14 +81,18 @@ class Worker
         $lastRestart = $this->getTimestampOfLastQueueRestart();
 
         while (true) {
+            //有任务需要跑
             if ($this->daemonShouldRun()) {
                 $this->runNextJobForDaemon(
                     $connectionName, $queue, $delay, $sleep, $maxTries
                 );
             } else {
+                //sleep
                 $this->sleep($sleep);
             }
 
+            //超内存 或者队列服务发生了重启
+            // cat storage/framework/cache/ee/2f/ee2f842aa7bb1f53edf3a2ed2c09a1807ffa6c90
             if ($this->memoryExceeded($memory) || $this->queueShouldRestart($lastRestart)) {
                 $this->stop();
             }
@@ -342,7 +346,7 @@ class Worker
 
     /**
      * Determine if the memory limit has been exceeded.
-     *
+     * 判断内存使用是否超过限制
      * @param  int   $memoryLimit
      * @return bool
      */
@@ -376,7 +380,7 @@ class Worker
 
     /**
      * Get the last queue restart timestamp, or null.
-     *
+     * 获取最后一次重启队列的时间
      * @return int|null
      */
     protected function getTimestampOfLastQueueRestart()

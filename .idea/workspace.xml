@@ -3,14 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="538fc5ec-2f63-4439-b303-c809a2a17cea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/local/app.php" afterPath="$PROJECT_DIR$/config/local/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/740edc3701a58dea9ef15b0bddeacff88c0d40e2" afterPath="$PROJECT_DIR$/storage/framework/sessions/740edc3701a58dea9ef15b0bddeacff88c0d40e2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel-2018-03-13.log" afterPath="$PROJECT_DIR$/storage/logs/laravel-2018-03-13.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Queueable.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Queueable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,85 +27,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="queue.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/queue.php">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="80" column="49" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="73">
+              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#40#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="121" column="60" lean-forward="false" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
+              <folding>
+                <element signature="e#44#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Worker.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="764">
+              <caret line="80" column="61" lean-forward="false" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="61" />
+              <folding>
+                <element signature="e#36#50#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Dispatcher.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Events/Dispatcher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="110" column="52" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="52" />
+            <state relative-caret-position="144">
+              <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestartCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkerStopping.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Events/WorkerStopping.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Command.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="168" column="54" lean-forward="false" selection-start-line="168" selection-start-column="54" selection-end-line="168" selection-end-column="54" />
               <folding>
-                <element signature="e#34#46#0#PHP" expanded="true" />
+                <element signature="e#38#81#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php">
+      <file leaf-file-name="Command.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Command/Command.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="255" column="42" lean-forward="true" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
-              <folding>
-                <element signature="e#36#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseFailedJobProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <state relative-caret-position="-784">
+              <caret line="213" column="26" lean-forward="false" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Builder.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+      <file leaf-file-name="RedisQueue.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="2190" column="20" lean-forward="false" selection-start-line="2190" selection-start-column="20" selection-end-line="2190" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NullFailedJobProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/NullFailedJobProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-398">
-              <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FailedJobProviderInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/FailedJobProviderInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="167" column="20" lean-forward="false" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+            <state relative-caret-position="2889">
+              <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -108,19 +128,11 @@
       <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/local/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="146" column="37" lean-forward="false" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="2929">
+              <caret line="197" column="32" lean-forward="false" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="32" />
+              <folding>
+                <element signature="e#36#48#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,20 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>release</find>
-      <find>DB_CONNECTION</find>
-      <find>expired</find>
-      <find>deleteReserved</find>
-      <find>dispatchN</find>
-      <find>transaction(</find>
-      <find>expire</find>
-      <find>migrateAllExpiredJobs</find>
-      <find>$this-&gt;expire</find>
-      <find>AppServiceProvider</find>
-      <find>failing</find>
-      <find>withChain</find>
-      <find>onConnection</find>
-      <find>default</find>
       <find>terminate</find>
       <find>attempts</find>
       <find>queue:work</find>
@@ -159,6 +157,20 @@
       <find>handle</find>
       <find>migrateExpiredJobs</find>
       <find>QueueServiceProvider</find>
+      <find>Illuminate\Bus\Dispatcher</find>
+      <find>dispatch</find>
+      <find>laterOn</find>
+      <find>Dispatcher</find>
+      <find>$this-&gt;connectors</find>
+      <find>memory</find>
+      <find>mem</find>
+      <find>fire</find>
+      <find>-&gt;execute(</find>
+      <find>$memoryLimit</find>
+      <find>illuminate:queue:restart</find>
+      <find>memoryExceeded</find>
+      <find>execute</find>
+      <find>restart(</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/vendor</dir>
@@ -175,12 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Str.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" />
-        <option value="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
         <option value="$PROJECT_DIR$/vendor/vlucas/phpdotenv/src/Dotenv.php" />
@@ -209,21 +215,29 @@
         <option value="$PROJECT_DIR$/config/queue.php" />
         <option value="$PROJECT_DIR$/app/Jobs/TestJob.php" />
         <option value="$PROJECT_DIR$/artisan" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/Dispatcher.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" />
         <option value="$PROJECT_DIR$/config/local/app.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Queueable.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/TestJob1.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Test.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php" />
       </list>
     </option>
   </component>
@@ -280,6 +294,32 @@
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -346,6 +386,27 @@
               <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Illuminate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Illuminate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Foundation" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Illuminate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Foundation" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Bus" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -368,17 +429,6 @@
               <item name="Illuminate" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Queue" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Illuminate" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Queue" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -436,12 +486,12 @@
       <workItem from="1511159762073" duration="1941000" />
       <workItem from="1511272392795" duration="3811000" />
       <workItem from="1520590462228" duration="2070000" />
-      <workItem from="1520822397281" duration="31810000" />
+      <workItem from="1520822397281" duration="45226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78712000" />
+    <option name="totallyTimeSpent" value="92128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="709" extended-state="0" />
@@ -481,206 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/predis/predis/src/Transaction/MultiExec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/predis/predis/src/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6530">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#33#43#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/Job.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#36#48#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/TerminableInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Input/Input.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1855">
-          <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artisan">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="40" column="75" lean-forward="false" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
-          <folding>
-            <element signature="e#26#481#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2569">
-          <caret line="102" column="40" lean-forward="false" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Input/InputDefinition.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4515">
-          <caret line="309" column="20" lean-forward="false" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/down">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Foundation/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <element signature="e#57#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="928" column="36" lean-forward="false" selection-start-line="928" selection-start-column="24" selection-end-line="928" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="118" column="24" lean-forward="false" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Queue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Events/JobExceptionOccurred.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -697,14 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="94" column="69" lean-forward="false" selection-start-line="94" selection-start-column="69" selection-end-line="94" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/TestJob.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -715,50 +557,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="116" column="47" lean-forward="false" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="47" />
-          <folding>
-            <element signature="e#36#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2958">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#36#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <element signature="e#44#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="182" column="20" lean-forward="false" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding>
-            <element signature="e#41#68#0#PHP" expanded="true" />
+            <element signature="e#41#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,76 +575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="104" column="51" lean-forward="false" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/Dispatcher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Queueable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/local/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="146" column="37" lean-forward="false" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -857,34 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="80" column="49" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="110" column="52" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="52" />
-          <folding>
-            <element signature="e#34#46#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="255" column="42" lean-forward="true" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
-          <folding>
-            <element signature="e#36#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -909,6 +619,344 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="2190" column="20" lean-forward="false" selection-start-line="2190" selection-start-column="20" selection-end-line="2190" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Job.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-717">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="322" column="47" lean-forward="false" selection-start-line="322" selection-start-column="39" selection-end-line="322" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/Dispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/QueueingDispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="20" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="76" />
+          <folding>
+            <element signature="e#34#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Queueable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Monitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Container/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="69" column="29" lean-forward="false" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/NullQueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/NullConnector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15885">
+          <caret line="1073" column="68" lean-forward="false" selection-start-line="1073" selection-start-column="58" selection-end-line="1073" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding>
+            <element signature="e#36#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3650">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#36#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3072">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#36#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/TestJob1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="118" column="24" lean-forward="false" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2929">
+          <caret line="197" column="32" lean-forward="false" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="32" />
+          <folding>
+            <element signature="e#36#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2889">
+          <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="168" column="54" lean-forward="false" selection-start-line="168" selection-start-column="54" selection-end-line="168" selection-end-column="54" />
+          <folding>
+            <element signature="e#38#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Command/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-784">
+          <caret line="213" column="26" lean-forward="false" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Events/WorkerStopping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Events/Dispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="121" column="60" lean-forward="false" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
+          <folding>
+            <element signature="e#44#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="80" column="61" lean-forward="false" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="61" />
+          <folding>
+            <element signature="e#36#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding />
         </state>
       </provider>

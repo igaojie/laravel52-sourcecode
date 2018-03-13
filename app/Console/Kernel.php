@@ -9,11 +9,12 @@ class Kernel extends ConsoleKernel
 {
     /**
      * The Artisan commands provided by your application.
-     *
+     * 需要在这里注册所有的Console类
      * @var array
      */
     protected $commands = [
          Commands\Inspire::class,
+         Commands\Test::class
     ];
 
     /**

@@ -49,7 +49,7 @@ class WorkCommand extends Command
 
     /**
      * Execute the console command.
-     *
+     * 是如何进入到这个函数的呢？
      * @return void
      */
     public function fire()
@@ -113,6 +113,7 @@ class WorkCommand extends Command
             $this->laravel['Illuminate\Contracts\Debug\ExceptionHandler']
         );
 
+        //如果是常驻模式
         if ($daemon) {
             $this->worker->setCache($this->laravel['cache']->driver());
 
@@ -121,6 +122,7 @@ class WorkCommand extends Command
                 $this->option('sleep'), $this->option('tries')
             );
         }
+
 
         return $this->worker->pop(
             $connection, $queue, $delay,

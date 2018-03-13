@@ -19,4 +19,5 @@ Route::get('test', 'TestController@showProfile');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/home/jd', 'HomeController@jd');
 Route::controller('/demo', 'DemoController');

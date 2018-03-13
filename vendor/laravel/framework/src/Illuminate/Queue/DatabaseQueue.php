@@ -227,7 +227,7 @@ class DatabaseQueue extends Queue implements QueueContract
 
     /**
      * Mark the given job ID as reserved.
-     *
+     * 将任务标识为暂留reserved处
      * @param \stdClass $job
      * @return \stdClass
      */

@@ -27,7 +27,7 @@ trait Queueable
 
     /**
      * Set the desired connection for the job.
-     *
+     * 设置连接
      * @param  string|null  $connection
      * @return $this
      */
@@ -40,7 +40,7 @@ trait Queueable
 
     /**
      * Set the desired queue for the job.
-     *
+     * 设置Queue
      * @param  string|null  $queue
      * @return $this
      */
@@ -53,7 +53,7 @@ trait Queueable
 
     /**
      * Set the desired delay for the job.
-     *
+     * 设置延迟时间
      * @param  int|null  $delay
      * @return $this
      */
