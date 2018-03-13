@@ -9,7 +9,6 @@ use Illuminate\Support\Arr;
 use SuperClosure\Serializer;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Encryption\Encrypter;
-use Illuminate\Contracts\Queue\QueueableEntity;
 
 abstract class Queue
 {
@@ -79,17 +78,20 @@ abstract class Queue
      */
     protected function createPayload($job, $data = '', $queue = null)
     {
+        //闭包
         if ($job instanceof Closure) {
             return json_encode($this->createClosurePayload($job, $data));
         }
 
+        //对象
         if (is_object($job)) {
             return json_encode([
                 'job' => 'Illuminate\Queue\CallQueuedHandler@call',
-                'data' => ['commandName' => get_class($job), 'command' => serialize(clone $job)],
+                'data' => ['commandName' => get_class($job), 'command' => serialize(clone $job)],//为什么用clone？
             ]);
         }
 
+        //链式调用
         return json_encode($this->createPlainPayload($job, $data));
     }
 

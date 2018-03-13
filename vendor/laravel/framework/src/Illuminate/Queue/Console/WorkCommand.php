@@ -49,11 +49,13 @@ class WorkCommand extends Command
 
     /**
      * Execute the console command.
-     *
+     * 是如何进入到这个函数的呢？
      * @return void
      */
     public function fire()
     {
+        //dd(debug_backtrace());
+        //维护模式
         if ($this->downForMaintenance() && ! $this->option('daemon')) {
             return $this->worker->sleep($this->option('sleep'));
         }
@@ -111,6 +113,7 @@ class WorkCommand extends Command
             $this->laravel['Illuminate\Contracts\Debug\ExceptionHandler']
         );
 
+        //如果是常驻模式
         if ($daemon) {
             $this->worker->setCache($this->laravel['cache']->driver());
 
@@ -119,6 +122,7 @@ class WorkCommand extends Command
                 $this->option('sleep'), $this->option('tries')
             );
         }
+
 
         return $this->worker->pop(
             $connection, $queue, $delay,
@@ -144,7 +148,7 @@ class WorkCommand extends Command
 
     /**
      * Determine if the worker should run in maintenance mode.
-     *
+     * 判断是否是维护模式
      * @return bool
      */
     protected function downForMaintenance()
@@ -158,7 +162,7 @@ class WorkCommand extends Command
 
     /**
      * Get the console command arguments.
-     *
+     * 获取命令行参数
      * @return array
      */
     protected function getArguments()
@@ -170,7 +174,7 @@ class WorkCommand extends Command
 
     /**
      * Get the console command options.
-     *
+     * 获取命令行选项
      * @return array
      */
     protected function getOptions()

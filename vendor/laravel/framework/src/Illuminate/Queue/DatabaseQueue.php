@@ -227,7 +227,7 @@ class DatabaseQueue extends Queue implements QueueContract
 
     /**
      * Mark the given job ID as reserved.
-     *
+     * 将任务标识为暂留reserved处
      * @param \stdClass $job
      * @return \stdClass
      */
@@ -266,8 +266,8 @@ class DatabaseQueue extends Queue implements QueueContract
 
     /**
      * Get the "available at" UNIX timestamp.
-     *
-     * @param  \DateTime|int  $delay
+     * 获取可用性时间
+     * @param  \DateTime|int  $delay 可以是确切的时间 也可以是秒数 框架自己运算得到时间戳
      * @return int
      */
     protected function getAvailableAt($delay)

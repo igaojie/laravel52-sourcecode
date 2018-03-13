@@ -1,8 +1,6 @@
 <?php
-
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreateJobsTable extends Migration
 {
     /**
@@ -24,7 +22,6 @@ class CreateJobsTable extends Migration
             $table->index(['queue', 'reserved', 'reserved_at']);
         });
     }
-
     /**
      * Reverse the migrations.
      *

@@ -62,9 +62,11 @@ class Dispatcher implements QueueingDispatcher
      */
     public function dispatch($command)
     {
+        //放入队列
         if ($this->queueResolver && $this->commandShouldBeQueued($command)) {
             return $this->dispatchToQueue($command);
         } else {
+            //立即执行 不进入队列（同步）
             return $this->dispatchNow($command);
         }
     }
@@ -84,7 +86,7 @@ class Dispatcher implements QueueingDispatcher
 
     /**
      * Determine if the given command should be queued.
-     *
+     * 判断参数是否是走队列
      * @param  mixed  $command
      * @return bool
      */
@@ -103,17 +105,24 @@ class Dispatcher implements QueueingDispatcher
      */
     public function dispatchToQueue($command)
     {
+        //dd($command);
+        // 如果指定了连接器 那么就使用
         $connection = isset($command->connection) ? $command->connection : null;
 
+        //laravel里内置了多种队列服务,这里则解析出来 通过$connection来确定$queue
+        //"Illuminate\Queue\DatabaseQueue"
         $queue = call_user_func($this->queueResolver, $connection);
 
+        //队列服务解析不成功则抛出异常
         if (! $queue instanceof Queue) {
             throw new RuntimeException('Queue resolver did not return a Queue implementation.');
         }
 
+        //可以在Jobs文件里自定义queue 方法来实现入库
         if (method_exists($command, 'queue')) {
             return $command->queue($queue, $command);
         } else {
+            //使用框架默认的方式
             return $this->pushCommandToQueue($queue, $command);
         }
     }
@@ -121,9 +130,11 @@ class Dispatcher implements QueueingDispatcher
     /**
      * Push the command onto the given queue instance.
      * 推送一条命令到消息队列实例
-     * @param  \Illuminate\Contracts\Queue\Queue  $queue
-     * @param  mixed  $command
+     * @param  \Illuminate\Contracts\Queue\Queue  $queue 队列服务
+     * @param  mixed  $command 任务类
      * @return mixed
+     *
+     * 根据不同的任务属性选择不同的入队列方式
      */
     protected function pushCommandToQueue($queue, $command)
     {

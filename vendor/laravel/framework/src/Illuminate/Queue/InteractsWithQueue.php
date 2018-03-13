@@ -15,7 +15,7 @@ trait InteractsWithQueue
 
     /**
      * Get the number of times the job has been attempted.
-     *
+     * 获取重试次数
      * @return int
      */
     public function attempts()
@@ -25,7 +25,7 @@ trait InteractsWithQueue
 
     /**
      * Delete the job from the queue.
-     *
+     * 删除一个任务
      * @return void
      */
     public function delete()
