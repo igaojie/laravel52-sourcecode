@@ -32,7 +32,12 @@ class TestJob extends Job implements ShouldQueue
         //
         Log::info(__CLASS__);
         //sleep(10);
+
+        //a();
+
         throw new \Exception("我就是个测试，我就让你一直重试。。。。", 1);
+
+
         
     }
 

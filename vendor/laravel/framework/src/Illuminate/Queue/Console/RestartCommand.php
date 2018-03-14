@@ -29,6 +29,7 @@ class RestartCommand extends Command
      */
     public function fire()
     {
+        //仅仅记录了一个时间而已 没有其他任何操作
         //重启 记录 illuminate:queue:restart 时间
         $this->laravel['cache']->forever('illuminate:queue:restart', time());
 

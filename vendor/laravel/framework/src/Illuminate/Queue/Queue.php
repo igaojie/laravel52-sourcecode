@@ -78,7 +78,6 @@ abstract class Queue
      */
     protected function createPayload($job, $data = '', $queue = null)
     {
-        //闭包
         if ($job instanceof Closure) {
             return json_encode($this->createClosurePayload($job, $data));
         }

@@ -137,6 +137,12 @@ class QueueManager implements FactoryContract, MonitorContract
 
             $this->connections[$name]->setContainer($this->app);
 
+            /*
+             Encrypter {#197 ▼
+              #cipher: "AES-256-CBC"
+              #key: b"s\x19÷¬yû┌┼ô╠\x00Å|[b╚+TZÇ┼ıH9{\vÑ;QL­\x04"
+            }
+             * */
             $this->connections[$name]->setEncrypter($this->app['encrypter']);
         }
 

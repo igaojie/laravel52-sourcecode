@@ -91,7 +91,7 @@ class Worker
                 $this->sleep($sleep);
             }
 
-            //超内存 或者队列服务发生了重启
+            //超内存 或者 队列服务发生了重启（时间发生变化）
             // cat storage/framework/cache/ee/2f/ee2f842aa7bb1f53edf3a2ed2c09a1807ffa6c90
             if ($this->memoryExceeded($memory) || $this->queueShouldRestart($lastRestart)) {
                 $this->stop();

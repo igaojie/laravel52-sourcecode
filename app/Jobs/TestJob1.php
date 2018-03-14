@@ -35,6 +35,7 @@ class TestJob1 extends Job implements ShouldQueue
     public function handle()
     {
         print_r($this->user);
+
     }
 
     /**
@@ -43,6 +44,9 @@ class TestJob1 extends Job implements ShouldQueue
     public function queue(){
         Log::info(__METHOD__);
         Log::info(var_dump(func_get_args(),true));
+
+        //a();
+
 
     }
 }
