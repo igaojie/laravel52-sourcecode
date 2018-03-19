@@ -37,6 +37,10 @@ class Test1 extends Command
      */
     public function handle()
     {
-        //
+        echo "handle == fire";
+    }
+
+    public function fire(){
+        echo "fire == handel";
     }
 }

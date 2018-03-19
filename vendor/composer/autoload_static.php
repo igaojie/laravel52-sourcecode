@@ -284,6 +284,7 @@ class ComposerStaticInit28bc75edcb3d8a9c58f706c416f773bb
     public static $classMap = array (
         'AddVotesToTestTable' => __DIR__ . '/../..' . '/database/migrations/2017_10_11_085231_add_votes_to_test_table.php',
         'AddVotesToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2017_10_11_085223_add_votes_to_users_table.php',
+        'CreateCacheTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_14_094438_create_cache_table.php',
         'CreateFailedJobsTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_12_065441_create_failed_jobs_table.php',
         'CreateJobsTable' => __DIR__ . '/../..' . '/database/migrations/2017_11_20_052125_create_failed_jobs_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

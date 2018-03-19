@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Jobs\TestJob1;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Jobs\TestJob;
@@ -29,8 +30,9 @@ class HomeController extends Controller
     public function index()
     {
 
-        $testjob1 = (new TestJob1(['user'=>'youxin','sex'=>1]))->delay(10)->onConnection('database');
+        $testjob1 = (new TestJob());//->delay(10);//->onConnection('database')->onQueue('sdsd');
         dispatch($testjob1);
+        //$this->dispatch($job);
         dd('testjob1 success');
 
         //dd(Carbon::now()->addMinutes(3)->addHours(8));
@@ -60,7 +62,4 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function jd(){
-        dd(json_decode('{"job":"Illuminate\\Queue\\CallQueuedHandler@call","data":{"commandName":"App\\Jobs\\TestJob1","command":"O:17:\"App\\Jobs\\TestJob1\":5:{s:4:\"user\";a:2:{s:4:\"user\";s:6:\"youxin\";s:3:\"sex\";i:1;}s:10:\"connection\";s:8:\"database\";s:5:\"queue\";N;s:5:\"delay\";i:10;s:6:\"\u0000*\u0000job\";N;}"}}',true));
-    }
 }

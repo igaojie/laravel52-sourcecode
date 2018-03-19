@@ -80,6 +80,7 @@ class RedisJob extends Job implements JobContract
      */
     public function release($delay = 0)
     {
+        //dd($this->queue);
         parent::release($delay);
 
         $this->delete();

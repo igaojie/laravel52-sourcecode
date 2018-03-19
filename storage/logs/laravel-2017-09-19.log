@@ -1,9 +1,0 @@
-[2017-09-19 15:34:43] local.ERROR: array (
-  'msg' => 'this is a test log',
-)  
-[2017-09-19 16:03:53] local.INFO: array (
-  'msg' => 'this is a test log',
-)  
-[2017-09-19 16:04:51] local.INFO: array (
-  'msg' => 'this is a test log',
-)  
