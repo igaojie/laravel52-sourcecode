@@ -16,7 +16,7 @@ function a()
 
 class a
 {
-    public function __construct()
+    function __construct()
     {
         aa();
         CC();
